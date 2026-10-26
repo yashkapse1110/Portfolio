@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Kapse | 4th Year Computer Engineering Student & Software Engineer</title>
+    <meta name="description" content="Portfolio of Yash Kapse, a 4th-year Computer Engineering undergraduate specializing in Full-Stack Development, Distributed Systems, Cloud Architecture, and Data Structures & Algorithms. Graduating Class of 2026.">
+    <meta name="keywords" content="Yash Kapse, Computer Engineering, Software Developer, SDE, Full Stack, Distributed Systems, React, Node.js, Python, C++, Portfolio, 2026 Graduate">
+    <meta name="author" content="Yash Kapse">
+
+    <!-- Open Graph / Meta for Social Sharing -->
+    <meta property="og:title" content="Yash Kapse | 4th Year Computer Engineering Student & Software Engineer">
+    <meta property="og:description" content="Explore projects, technical skills, and engineering coursework of Yash Kapse. Seeking SDE & Full-Stack opportunities.">
+    <meta property="og:type" content="website">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-brand" aria-label="Home">
+                <div class="brand-logo">&lt;YK /&gt;</div>
+                <div class="brand-text">Yash Kapse</div>
+                <div class="brand-badge">
+                    <span class="pulse-dot"></span> Class of 2026
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About & Academics</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-outline btn-sm open-resume-btn" id="nav-resume-btn">
+                    <span>📄</span> View CV
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+           HERO SECTION
+           ========================================================================== -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-status-pill">
+                            <span class="pulse-dot"></span>
+                            <span>4th Year B.E. Computer Engineering &bull; <span class="accent">Open to SDE Roles</span></span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            Hello, I'm <br>
+                            <span class="hero-name">Yash Kapse</span>
+                        </h1>
+
+                        <div class="hero-subtitle">
+                            <span id="typing-role">Software Development Engineer (SDE)</span>
+                            <span class="typing-cursor"></span>
+                        </div>
+
+                        <p class="hero-bio">
+                            Final-year Computer Engineering undergraduate crafting high-performance distributed systems, scalable web applications, and intuitive user experiences. Passionate about solving complex algorithmic challenges and building impactful, fault-tolerant software.
+                        </p>
+
+                        <div class="hero-cta-group">
+                            <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+                                <span>🚀</span> Explore Projects
+                            </a>
+                            <button class="btn btn-secondary open-resume-btn" id="hero-cv-btn">
+                                <span>📄</span> Download CV
+                            </button>
+                            <a href="#contact" class="btn btn-outline" id="hero-contact-btn">
+                                <span>✉️</span> Get in Touch
+                            </a>
+                        </div>
+
+                        <div class="hero-socials">
+                            <a href="https://github.com/yashkapse1110" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" id="social-github">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/yashkapse" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" id="social-linkedin">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <a href="https://leetcode.com/yashkapse1110" target="_blank" rel="noopener noreferrer" class="social-link" title="LeetCode Profile" id="social-leetcode">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.874 5.874 0 0 0 .749 1.953 5.484 5.484 0 0 0 1.624 1.83 5.46 5.46 0 0 0 3.25 1.054c1.125 0 2.22-.34 3.125-.972l1.64-1.144 2.158 2.158a1.375 1.375 0 1 0 1.944-1.945l-2.158-2.158 1.144-1.64a5.46 5.46 0 0 0 .972-3.125 5.484 5.484 0 0 0-1.054-3.25 5.527 5.527 0 0 0-1.83-1.624 5.874 5.874 0 0 0-1.953-.749 5.35 5.35 0 0 0-2.362-.062 5.266 5.266 0 0 0-.513.125l-4.126 3.854 5.405 5.405a1.375 1.375 0 0 0 1.945-1.944L10.38 8.169l2.842-2.842 2.842 2.842a1.375 1.375 0 1 0 1.945-1.944L14.444.438A1.374 1.374 0 0 0 13.483 0z"/></svg>
+                            </a>
+                            <a href="mailto:yashkapse11102005@gmail.com" class="social-link" title="Direct Email" id="social-email">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-backdrop"></div>
+                            <div class="avatar-card">
+                                <img src="avatar.jpg" alt="Yash Kapse - 4th Year Computer Engineering Student" class="avatar-img" width="360" height="360">
+                            </div>
+
+                            <!-- Floating Tech Chips -->
+                            <div class="floating-chip top-right">
+                                <div class="chip-icon">⚡</div>
+                                <div class="chip-text">
+                                    <strong>500+ DSA Solved</strong>
+                                    <span>LeetCode &bull; Top 12%</span>
+                                </div>
+                            </div>
+
+                            <div class="floating-chip bottom-left">
+                                <div class="chip-icon">🎯</div>
+                                <div class="chip-text">
+                                    <strong>8.9 CGPA / 10.0</strong>
+                                    <span>B.E. Computer Eng.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           METRICS / IMPACT STRIP
+           ========================================================================== -->
+        <section class="stats-strip">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">4th Year</div>
+                        <div class="stat-label">Computer Engineering (2022-26)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Full-Stack & Systems Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Data Structures & Algo Problems</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8.9/10</div>
+                        <div class="stat-label">Cumulative Academic CGPA</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           ABOUT ME & ACADEMIC FOUNDATIONS
+           ========================================================================== -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// 01. Background & Academics</span>
+                    <h2 class="section-title">Engineering Mindset & <span>Foundations</span></h2>
+                    <p class="section-desc">Bridging core computer science theoretical principles with real-world high-throughput software development.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Passionate about Building Resilient Software</h3>
+                        <p>
+                            As a 4th-year Computer Engineering undergraduate, I have spent the last four years mastering both the foundational mechanics of computing—from operating system concurrency, memory management, and network protocols—to modern distributed cloud architectures and reactive user interfaces.
+                        </p>
+                        <p>
+                            My development journey balances academic excellence with pragmatic engineering. I thrive when dissecting complex algorithmic challenges, designing normalized and index-optimized relational schemas, and architecting RESTful and event-driven microservices.
+                        </p>
+
+                        <div class="about-highlights-grid">
+                            <div class="highlight-box">
+                                <h4><span>⚡</span> Distributed Systems</h4>
+                                <p>Designing resilient microservices with Node.js, FastAPI, Docker, and Redis message queues.</p>
+                            </div>
+                            <div class="highlight-box">
+                                <h4><span>🧩</span> Algorithmic Problem Solving</h4>
+                                <p>Strong grasp of Dynamic Programming, Graph Traversals, Trees, and Sorting optimizations.</p>
+                            </div>
+                            <div class="highlight-box">
+                                <h4><span>💻</span> Modern Web Stack</h4>
+                                <p>Building accessible, state-driven interfaces using React.js, Next.js, and modern Vanilla CSS.</p>
+                            </div>
+                            <div class="highlight-box">
+                                <h4><span>🗄️</span> Database Architecture</h4>
+                                <p>Designing scalable relational (PostgreSQL) and NoSQL (MongoDB) schemas with ACID guarantees.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="academics-card">
+                        <h4><span>🎓</span> Academic Qualifications</h4>
+                        <div class="edu-timeline">
+                            <div class="edu-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-year">2022 &mdash; 2026 (Final Year)</div>
+                                <div class="edu-title">Bachelor of Engineering in Computer Engineering</div>
+                                <div class="edu-subtitle">Current CGPA: <strong>8.9 / 10.0</strong> &bull; Honors Track</div>
+                                <p class="edu-detail">
+                                    Focused on core computational engineering, systems programming, and distributed architectures. Capstone Project: Enterprise RAG Semantic Knowledge Engine.
+                                </p>
+                                <div class="coursework-tags">
+                                    <span class="cw-tag">Data Structures &amp; Algorithms</span>
+                                    <span class="cw-tag">Operating Systems</span>
+                                    <span class="cw-tag">Database Management (DBMS)</span>
+                                    <span class="cw-tag">Computer Networks</span>
+                                    <span class="cw-tag">System Design</span>
+                                    <span class="cw-tag">Object-Oriented Programming (OOP)</span>
+                                    <span class="cw-tag">Cloud Computing</span>
+                                    <span class="cw-tag">Compiler Design</span>
+                                </div>
+                            </div>
+
+                            <div class="edu-item">
+                                <div class="edu-dot"></div>
+                                <div class="edu-year">2020 &mdash; 2022</div>
+                                <div class="edu-title">Higher Secondary Certificate (HSC)</div>
+                                <div class="edu-subtitle">Physics, Chemistry, Mathematics &amp; Computer Science</div>
+                                <p class="edu-detail">
+                                    Graduated with distinction (91.4%). Demonstrated excellence in competitive mathematics and introductory C++ programming.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           TECHNICAL SKILLS MATRIX
+           ========================================================================== -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// 02. Technical Arsenal</span>
+                    <h2 class="section-title">Skills &amp; <span>Proficiencies</span></h2>
+                    <p class="section-desc">Curated toolset honed across university coursework, production internships, and independent engineering projects.</p>
+                </div>
+
+                <div class="skill-filters">
+                    <button class="filter-btn active" data-filter="all">All Disciplines</button>
+                    <button class="filter-btn" data-filter="languages">Programming Languages</button>
+                    <button class="filter-btn" data-filter="web">Frontend &amp; UI</button>
+                    <button class="filter-btn" data-filter="backend">Backend &amp; Databases</button>
+                    <button class="filter-btn" data-filter="devops">DevOps &amp; Tools</button>
+                    <button class="filter-btn" data-filter="core">CS Fundamentals</button>
+                </div>
+
+                <div class="skills-categories-grid">
+                    <!-- Languages -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap">&lt;/&gt;</div>
+                            <h3 class="skill-card-title">Languages</h3>
+                        </div>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill"><span class="pill-dot"></span> C++ (STL / OOP)</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Python 3</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> JavaScript (ES6+)</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> TypeScript</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Java</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> SQL (Postgres / MySQL)</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> HTML5 / CSS3</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-card" data-category="web">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap">🎨</div>
+                            <h3 class="skill-card-title">Frontend &amp; UI</h3>
+                        </div>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill"><span class="pill-dot"></span> React.js</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Next.js</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Redux Toolkit</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Modern Vanilla CSS</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Tailwind CSS</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Responsive Design</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> WebSockets &amp; Canvas</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Databases -->
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap">⚙️</div>
+                            <h3 class="skill-card-title">Backend &amp; DB</h3>
+                        </div>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill"><span class="pill-dot"></span> Node.js</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Express.js</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> FastAPI</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> PostgreSQL</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> MongoDB &amp; Mongoose</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Redis (Caching / PubSub)</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> RESTful API Design</span>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Tools -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap">🛠️</div>
+                            <h3 class="skill-card-title">DevOps &amp; Cloud</h3>
+                        </div>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill"><span class="pill-dot"></span> Docker &amp; Containers</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Git &amp; GitHub</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Linux / Bash CLI</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> AWS (EC2 / S3 basics)</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Postman / Newman</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> CI/CD GitHub Actions</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Vite &amp; Webpack</span>
+                        </div>
+                    </div>
+
+                    <!-- Core Computer Science -->
+                    <div class="skill-card" data-category="core">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap">🧠</div>
+                            <h3 class="skill-card-title">CS Fundamentals</h3>
+                        </div>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill"><span class="pill-dot"></span> Data Structures &amp; Algo</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Object Oriented Design</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Database Management (DBMS)</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Operating Systems &amp; Threads</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Computer Networks (TCP/IP)</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> System Design Principles</span>
+                        </div>
+                    </div>
+
+                    <!-- Development Practices -->
+                    <div class="skill-card" data-category="core">
+                        <div class="skill-card-header">
+                            <div class="skill-icon-wrap">⚡</div>
+                            <h3 class="skill-card-title">Engineering Practices</h3>
+                        </div>
+                        <div class="skill-pill-list">
+                            <span class="skill-pill"><span class="pill-dot"></span> Test Driven Development</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Agile / Scrum Methodology</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Code Profiling &amp; Latency</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> API Security &amp; JWT</span>
+                            <span class="skill-pill"><span class="pill-dot"></span> Semantic Versioning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           FEATURED PROJECTS SHOWCASE
+           ========================================================================== -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// 03. Engineered Solutions</span>
+                    <h2 class="section-title">Featured <span>Projects</span></h2>
+                    <p class="section-desc">Production-grade systems, AI knowledge engines, and algorithmic tools engineered to solve concrete technical challenges.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-img-wrap">
+                            <img src="project1.jpg" alt="CloudScale AI - Enterprise RAG Engine" class="project-img" loading="lazy">
+                            <div class="project-tag-overlay">
+                                <span class="overlay-badge">AI Systems &bull; Capstone</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">CloudScale AI: RAG Knowledge Platform</h3>
+                            <p class="project-description">
+                                High-throughput Retrieval-Augmented Generation (RAG) system indexing 8.4M+ document vectors with sub-65ms semantic query retrieval, hybrid keyword-vector ranking, and real-time streaming answer synthesis.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">Pinecone Vector DB</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">React</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yashkapse1110" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="proj1-code">
+                                    <span>&lt;/&gt;</span> GitHub Code
+                                </a>
+                                <a href="#contact" class="project-link-btn" id="proj1-demo">
+                                    <span>🔗</span> Live Architecture
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-img-wrap">
+                            <img src="project2.jpg" alt="DevPulse - Real-Time Microservices Monitoring Dashboard" class="project-img" loading="lazy">
+                            <div class="project-tag-overlay">
+                                <span class="overlay-badge">Distributed Systems</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">DevPulse: Microservices Health Hub</h3>
+                            <p class="project-description">
+                                Distributed observability and telemetry console providing sub-second latency percentiles (p95/p99), WebSocket streaming metrics, dynamic network topology graphs, and automated circuit-breaker alerts.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">WebSocket</span>
+                                <span class="tech-tag">Redis PubSub</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yashkapse1110" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="proj2-code">
+                                    <span>&lt;/&gt;</span> GitHub Code
+                                </a>
+                                <a href="#contact" class="project-link-btn" id="proj2-demo">
+                                    <span>🔗</span> Live Monitor
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-img-wrap">
+                            <img src="project3.jpg" alt="AlgoPath - Interactive Pathfinding & Graph Engine" class="project-img" loading="lazy">
+                            <div class="project-tag-overlay">
+                                <span class="overlay-badge">Algorithms &bull; Simulation</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AlgoPath: Interactive Graph Engine</h3>
+                            <p class="project-description">
+                                Real-time canvas visualizer simulating Dijkstra, A* heuristic pathfinding, and bidirectional graph searches with dynamic obstacle density, execution speed controls, and Web Audio sound synthesis.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">JavaScript ES6+</span>
+                                <span class="tech-tag">Canvas API</span>
+                                <span class="tech-tag">Web Audio API</span>
+                                <span class="tech-tag">CSS Grid</span>
+                                <span class="tech-tag">Graph Theory</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/yashkapse1110" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="proj3-code">
+                                    <span>&lt;/&gt;</span> GitHub Code
+                                </a>
+                                <a href="#contact" class="project-link-btn" id="proj3-demo">
+                                    <span>▶️</span> Run Visualizer
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           EXPERIENCE, LEADERSHIP & ACHIEVEMENTS
+           ========================================================================== -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// 04. Track Record</span>
+                    <h2 class="section-title">Experience &amp; <span>Honors</span></h2>
+                    <p class="section-desc">Demonstrated leadership, production internships, and competitive coding milestones.</p>
+                </div>
+
+                <div class="exp-grid">
+                    <!-- Left: Professional & Club Experience -->
+                    <div>
+                        <h3 class="exp-column-title"><span>💼</span> Practical Experience</h3>
+
+                        <div class="exp-card">
+                            <div class="exp-role">Software Engineering Intern</div>
+                            <div class="exp-company">Tech Innovation Labs &bull; Pune, India</div>
+                            <div class="exp-period">June 2025 &mdash; August 2025</div>
+                            <ul class="exp-points">
+                                <li>Engineered RESTful microservices using Node.js and PostgreSQL, decreasing query latency by 32% through index optimization and Redis caching.</li>
+                                <li>Constructed reusable React component modules and integrated Jest unit tests, achieving 88% overall code coverage.</li>
+                                <li>Collaborated in Agile sprints, reviewing pull requests and deploying containerized staging builds via Docker.</li>
+                            </ul>
+                        </div>
+
+                        <div class="exp-card">
+                            <div class="exp-role">Technical Lead &amp; Student Coordinator</div>
+                            <div class="exp-company">Computer Engineering Student Association (CESA)</div>
+                            <div class="exp-period">August 2024 &mdash; Present</div>
+                            <ul class="exp-points">
+                                <li>Mentored over 120+ sophomore and junior engineering students in Data Structures, Algorithms, and Full-Stack Web Development.</li>
+                                <li>Spearheaded the technical infrastructure and submission portal for the Annual College Hackathon hosting 350+ developers.</li>
+                                <li>Organized hands-on technical workshops covering Git workflows, Linux fundamentals, and cloud deployments.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Right: Honors & Certifications -->
+                    <div>
+                        <h3 class="exp-column-title"><span>🏆</span> Accolades &amp; Certifications</h3>
+
+                        <div class="achievement-card">
+                            <div class="achieve-icon">🥇</div>
+                            <div>
+                                <div class="achieve-title">Top 5 Finalist &mdash; State Level Engineering Hackathon (2025)</div>
+                                <div class="achieve-desc">Architected an automated offline-first accessibility application chosen among 180+ multidisciplinary university teams.</div>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achieve-icon">⚡</div>
+                            <div>
+                                <div class="achieve-title">500+ Algorithmic Challenges Solved</div>
+                                <div class="achieve-desc">Active competitor on LeetCode &amp; GeeksforGeeks with top 12% global rating; consistent 50+ day problem-solving streak.</div>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achieve-icon">☁️</div>
+                            <div>
+                                <div class="achieve-title">AWS Academy Graduate &mdash; Cloud Foundations</div>
+                                <div class="achieve-desc">Certified competency in AWS Cloud architecture, EC2 compute scaling, S3 storage, IAM security, and VPC networking.</div>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achieve-icon">📜</div>
+                            <div>
+                                <div class="achieve-title">Academic Merit Scholar &mdash; Department of Computer Engineering</div>
+                                <div class="achieve-desc">Awarded academic commendation for sustaining top 5% rank in cohort across 6 consecutive academic semesters.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           CONTACT & CONNECT SECTION
+           ========================================================================== -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// 05. Let's Connect</span>
+                    <h2 class="section-title">Get In <span>Touch</span></h2>
+                    <p class="section-desc">Actively exploring Full-Time Software Engineering (SDE) roles, Graduate Trainee positions, and technical collaborations.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <h3>Let's Build Something Impactful.</h3>
+                        <p>
+                            Whether you have an open SDE / Full-Stack vacancy, want to discuss systems architecture, or have an exciting hackathon or capstone idea, my inbox is always open.
+                        </p>
+
+                        <div class="contact-detail-items">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon-wrap">📧</div>
+                                <div>
+                                    <div class="detail-label">Direct Email</div>
+                                    <div class="detail-value">yashkapse11102005@gmail.com</div>
+                                </div>
+                                <button class="copy-email-btn" id="copy-email-btn" title="Copy email address">
+                                    Copy
+                                </button>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon-wrap">📍</div>
+                                <div>
+                                    <div class="detail-label">Location</div>
+                                    <div class="detail-value">India &bull; Open to Relocation &amp; Remote</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon-wrap">💼</div>
+                                <div>
+                                    <div class="detail-label">Availability</div>
+                                    <div class="detail-value">Class of 2026 &bull; Ready for Immediate Hire</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-socials">
+                            <a href="https://github.com/yashkapse1110" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/yashkapse" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <a href="mailto:yashkapse11102005@gmail.com" class="social-link" title="Send Email">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Alex Henderson" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="alex@company.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Opportunity / Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="SDE Role / Full-Stack Project / Interview Inquiry">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Hi Yash, we came across your engineering portfolio and would love to discuss a Software Development role..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
+                                <span>🚀</span> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       RESUME PREVIEW MODAL
+       ========================================================================== -->
+    <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="close-resume-btn" aria-label="Close CV Modal">✕</button>
+
+            <div class="resume-header">
+                <h2 id="modal-name">Yash Kapse</h2>
+                <p style="color: var(--cyan-primary); font-weight: 600; margin-top: 0.2rem;">4th Year Computer Engineering Undergraduate &bull; Class of 2026</p>
+                <div class="resume-contact-row">
+                    <span>📧 yashkapse11102005@gmail.com</span>
+                    <span>📍 India</span>
+                    <span>🌐 github.com/yashkapse1110</span>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3 class="resume-section-title">Education</h3>
+                <div style="margin-bottom: 0.6rem;">
+                    <strong style="color: #fff;">Bachelor of Engineering (B.E.) in Computer Engineering</strong>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);">2022 &mdash; 2026 (Final Year) &bull; CGPA: <strong>8.9 / 10.0</strong></div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">Relevant Coursework: Data Structures &amp; Algorithms, OS, DBMS, Computer Networks, System Design, OOP.</div>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3 class="resume-section-title">Technical Expertise</h3>
+                <div style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                    <p><strong style="color: #fff;">Languages:</strong> C++, Python, JavaScript (ES6+), TypeScript, Java, SQL, HTML5/CSS3</p>
+                    <p><strong style="color: #fff;">Full-Stack &amp; Frameworks:</strong> React.js, Next.js, Node.js, Express.js, FastAPI, Redux Toolkit, Tailwind CSS</p>
+                    <p><strong style="color: #fff;">Databases &amp; Cloud:</strong> PostgreSQL, MongoDB, Redis, Docker, AWS (EC2/S3), Git &amp; GitHub, Linux</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3 class="resume-section-title">Engineering Projects</h3>
+                <div style="margin-bottom: 0.8rem;">
+                    <strong style="color: #fff;">CloudScale AI: Distributed RAG Knowledge Engine</strong>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);">Python, FastAPI, LangChain, Pinecone, Docker, React</div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted);">Indexed 8.4M+ documents with sub-65ms semantic vector search and hybrid keyword ranking.</div>
+                </div>
+                <div style="margin-bottom: 0.8rem;">
+                    <strong style="color: #fff;">DevPulse: Real-Time Microservices Health Hub</strong>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary);">Node.js, Express, WebSocket, Redis, React, Chart.js</div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted);">Engineered distributed telemetry streaming for 70+ services with p95/p99 alerts and network maps.</div>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                <button class="btn btn-primary" id="print-resume-btn">
+                    <span>🖨️</span> Print / Save as PDF
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-copy">
+                &copy; 2026 <strong>Yash Kapse</strong>. Designed &amp; Engineered with modern standards.
+            </div>
+            <a href="#hero" class="back-to-top" id="back-to-top">
+                <span>Back to Top ↑</span>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
